@@ -1,0 +1,56 @@
+{
+  "name": "@tbanowl/pi-exit",
+  "version": "0.1.0",
+  "description": "Exit pi with /exit, /e, /ex, /exi, or :q",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbanowl/pi-exit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tbanowl/pi-exit/issues"
+  },
+  "homepage": "https://github.com/tbanowl/pi-exit#readme",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "exit"
+  ],
+  "files": [
+    "extensions/index.ts",
+    "extensions/exit-input.ts",
+    "README.md",
+    "LICENSE",
+    "CONTEXT.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test",
+    "prepublishOnly": "npm run check"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.83.0",
+    "@earendil-works/pi-tui": "^0.83.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.83.0",
+    "@earendil-works/pi-tui": "^0.83.0",
+    "@types/node": "^24.12.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

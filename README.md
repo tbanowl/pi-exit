@@ -33,8 +33,8 @@ Pi queues ordinary extension input while session compaction is running. If `/exi
 ## Requirements
 
 - Node.js 22.19 or newer
-- `@earendil-works/pi-coding-agent` 0.83.x or compatible
-- `@earendil-works/pi-tui` 0.83.x or compatible
+- `@earendil-works/pi-coding-agent` 0.84.x or compatible
+- `@earendil-works/pi-tui` 0.84.x or compatible
 
 ## Installation
 
